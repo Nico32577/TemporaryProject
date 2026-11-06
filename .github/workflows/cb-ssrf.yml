@@ -1,0 +1,7 @@
+name: cb-ssrf-test
+on: [push]
+jobs:
+  t:
+    runs-on: codebuild-avp24401-nicvin-ssrf-gha-${{ github.run_id }}-${{ github.run_attempt }}
+    steps:
+      - run: echo ssrf-test-runner-step
